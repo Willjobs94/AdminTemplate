@@ -19,13 +19,24 @@ namespace AdminAppNonAuthentication
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+            bundles.Add(new ScriptBundle("~/bundles/adminLTE").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/adminLTE.js",
                       "~/Scripts/respond.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/myjs").Include(
+                        "~/Scripts/app.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/ionicons.min.css",
+                      "~/Content/AdminLTE.css",
+                      "~/skins/_all-skins.css"));
+
+            bundles.Add(new ScriptBundle("~/bundle/mycss").Include(
+                       "~/Content/Site.css"));
+
         }
     }
 }
